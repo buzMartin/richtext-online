@@ -1,6 +1,8 @@
 import streamlit as st
 from PIL import Image
 
+
+h1 = st.markdown('# 欢迎来到本地化playground!🎉')
 image = Image.open('icon.png')
 
 st.set_page_config(
@@ -19,5 +21,5 @@ with c2:
 
 # 在Streamlit应用中显示图片
 col1,col2,col3 = st.columns([0.2,0.6,0.2])
-# with col2:
-#     st.image(image, caption='这是我的图片', use_column_width=False)
+with col2:
+    st.image(image, caption='这是我的图片', use_column_width=False)
